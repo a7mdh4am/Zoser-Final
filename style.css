@@ -90,6 +90,7 @@ section{
     grid-template-columns: repeat(2, 1fr) ;
     align-items: center;
     gap: 2rem;
+    letter-spacing: 1px;
 
 }
 

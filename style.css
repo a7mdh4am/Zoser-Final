@@ -60,6 +60,7 @@ header{
     border-radius: 7px;*/
     font-size: 15px;
     font-weight: 500;
+    color: #303030;
     transition: all .6s ease;
 }
 .nav-btn:hover{
@@ -123,10 +124,22 @@ border-radius: 30px;
     display: flex;
     align-items: center;
 }
+.inst{
+    display: block;
+    margin: 35px 0;
+    color: #303030;
+    font-size: 23px;
+    transition: all .6s ease;
+}
+.inst:hover{
+    transform: translateY(-5px);
+    color: #000;
+
+}
 .btn{
     display:inline-block;
     padding: 13px 32px;
-    background: var(--main-color);
+    background: var(--text-color);
     border-radius: 7px;
     color: white;
     font-size: 15px;
@@ -157,11 +170,8 @@ border-radius: 30px;
 
 }
 .icons{
-    position: absolute;
-    top: 50%;
-    padding: 0 7%;
-    transform: translateY(-50%);
-
+    display: grid;
+    place-items: center;
 }
 .icons i{
     display: block;
@@ -169,11 +179,6 @@ border-radius: 30px;
     color: #303030;
     font-size: 23px;
     transition: all .6s ease;
-}
-.icons i:hover{
-    transform: translateY(-5px);
-    color: #000;
-
 }
 @media(max-width:1770px){
     header{
@@ -191,7 +196,7 @@ border-radius: 30px;
 }
 @media(max-width:1370px){
 .icons{
-    display: none;
+    /* display: none;*/
 }
 section{
     padding: 0 4%;
@@ -268,6 +273,9 @@ section{
     }
     :root{
         --big-font: 4rem;
+    }
+    footer{
+        padding-top: 30vh;
     }
 }
 

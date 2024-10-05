@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZOSER</title>
-    <meta name="description" content="ZOSER - Create and customize ID cards for friends and share your memories">
-<meta name="keywords" content="ID cards, friendship, customizable, NFC cards">
-
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!--box icon link-->
@@ -27,15 +24,15 @@
 <body>
     <!--header-->
     <header>
-        <a href="#" class="logo" >
-            <img src="images/logo.svg" alt="Zoser logo">
+        <a href="index.html" class="logo" >
+            <img src="images/logo.svg">
         </a>
 
         <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Membership</a></li>
             <li><a href="#">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://www.instagram.com/zoser.eg/"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
         <div class="right-content">
             <a href="signin.html" class="nav-btn">Sign In</a>
@@ -45,34 +42,25 @@
     </header>
     
     <!--hero-->
-    <section class="hero">
-        <div class="hero-text">
-            <h5>Guarantee YOUR LOVE!</h5>
-            <h1>Besties Licence</h1>
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-            <div class="main-hero">
-                <a href="#" class="btn">Order Now</a>
-                <a href="#" class="price">100LE<span></span></a>
-            </div>
-        </div>
-            <div class="hero-img">
-            <img src="images/hero.png">
-        </div>
-    </section>
-   
-
+    <section id="contact" class="contact">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+          <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="input-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
     <!--js-->
-    <section class="footer">
-    <h4>About Us</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor,
-        vestibulum magna sed, convallis ex.</p>
-
-        <p>Made With <i class="ri-heart-line"></i> by a7mdh4am</p>
-    </section>
-    
-    
-    
-    
     <script src="script.js"></script>
 </body>
 </html>

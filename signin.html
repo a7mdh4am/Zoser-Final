@@ -32,28 +32,29 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Membership</a></li>
             <li><a href="#">Events</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="right-content">
-            <a href="#" class="nav-btn">Sign In</a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
 
     </header>
     
     <!--hero-->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>About US</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, incidunt iusto dolores ullam inventore iste quidem quibusdam magnam a nobis dolorem atque omnis fugit vero quae deserunt accusantium delectus optio.</p>
-            <div class="main-hero">
-                <a href="#" class="btn">Contact</a>
-                <div class="inst">
-                    <a href="https://www.instagram.com/zoser.eg/"><i class="ri-instagram-line"></i></a> 
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="contact" class="contact">
+        <h1>Sign In</h1>
+        <form id="contactForm">
+          <div class="input-group">
+            <label for="userid">ID:</label>
+            <input type="text" id="userid" name="userid" placeholder="ID Card" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="Password" name="password" placeholder="Password" required>
+          </div>
+          <button type="submit">Sign In</button>
+        </form>
+      </section>
     <!--js-->
     <script src="script.js"></script>
 </body>

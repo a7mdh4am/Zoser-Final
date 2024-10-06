@@ -266,7 +266,7 @@ border-radius: 30px;
 
 
   .profile-text{
-    margin: 7% 4%;
+    margin: 7% 5%;
     text-align: center;
   }
 
@@ -303,6 +303,7 @@ border-radius: 30px;
     .icons{
         padding: 0 4%;
     }
+
 }
 @media(max-width:1670px){
     :root{
@@ -313,6 +314,9 @@ border-radius: 30px;
 @media(max-width:1370px){
 section{
     padding: 0 4%;
+}
+.profile-text{
+    margin-top: 10%;
 }
 }
 @media(max-width:1150px){
@@ -327,6 +331,9 @@ section{
 }
 }
 @media(max-width:950px){
+    .profile-text{
+        margin-top: 13%;
+    }
     #menu-icon{
         display: block;
     }
@@ -388,6 +395,9 @@ section{
     }
     :root{
         --big-font: 4rem;
+    }
+    .profile-text{
+        margin-top: 20%;
     }
 }
 

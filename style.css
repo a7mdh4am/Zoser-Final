@@ -265,9 +265,31 @@ border-radius: 30px;
   
 
 
+  .profile-text{
+    margin: 7% 4%;
+    text-align: center;
+  }
 
-
-
+  .swiper {
+    width: 240px;
+    height: 320px;
+    
+    object-fit:cover;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .swiper-slide img{
+      max-width: 240px;
+      object-fit:fill;
+  }
 
 
 

@@ -1,3 +1,7 @@
+<?php 
+require_once 'includes/config_session.inc.php';
+require_once 'includes/login_view.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +45,11 @@
                 <li><a href="https://www.instagram.com/zoser.eg/"><i class="ri-instagram-line"></i></a></li>
             </ul>
             <div class="right-content">
+
+               <?php
+              if(!isset($_SESSION["user_id"])){?>
                 <a href="signin.html" class="nav-btn">Sign In</a>
+              <?php }?>
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
     

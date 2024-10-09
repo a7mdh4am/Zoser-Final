@@ -294,6 +294,36 @@ border-radius: 30px;
 
 
 
+  /* .imgrl img{
+    
+    position: absolute;
+    width: 70vw;
+    border-radius: 5vw;
+  }
+
+  .imgrl .imgrl-1{
+
+    top: 190vw;
+    left: 0;
+
+  }
+  .imgrl .imgrl-2{
+
+    top: 248vw;
+    right: 0;
+  }
+  .imgrl .imgrl-4{
+
+    top: 350vw;
+    left: 0;  
+}
+  .imgrl .imgrl-3{
+    top: 420vw;
+    right: 0;
+
+  } */
+
+
 
 
 @media(max-width:1770px){

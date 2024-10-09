@@ -32,10 +32,11 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Membership</a></li>
             <li><a href="#">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Contact</a></li>
             <li><a href="https://www.instagram.com/zoser.eg/"><i class="ri-instagram-line"></i></a></li>
         </ul>
         <div class="right-content">
+            <a href="signin.html" class="nav-btn">Sign In</a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
 
@@ -43,17 +44,21 @@
     
     <!--hero-->
     <section id="contact" class="contact">
-        <h1>Sign In</h1>
-        <form id="contactForm">
+        <h1>Contact Us</h1>
+        <form action="includes/contacthandler.inc.php" method="POST">
           <div class="input-group">
-            <label for="userid">ID:</label>
-            <input type="text" id="userid" name="userid" placeholder="ID Card" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
           </div>
           <div class="input-group">
-            <label for="password">Password:</label>
-            <input type="password" id="Password" name="password" placeholder="Password" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
           </div>
-          <button type="submit">Sign In</button>
+          <div class="input-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
         </form>
       </section>
     <!--js-->

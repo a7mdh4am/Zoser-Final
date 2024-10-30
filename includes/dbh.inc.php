@@ -1,6 +1,6 @@
 <?php
 
-$dsn = "mysql:host=localhost;dbname=zosertest";
+$dsn = "mysql:host=localhost;dbname=zosertest;charset=utf8";
 $dbusername = "root";
 $dbpassword = "";
 

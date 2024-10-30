@@ -52,7 +52,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 
        $_SESSION["last_regenration"] = time();
 
-       header("Location: ../signin.php?signin=success/". $result["id"] );
+       header("Location: ../profile.php?id=". $result["id"] );
        $pdo = null;
        $stmt = null;
        

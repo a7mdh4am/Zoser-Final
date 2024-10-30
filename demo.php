@@ -14,6 +14,8 @@ require_once 'includes/login_view.inc.php';
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+
 
       <!--box icon link-->
       <link rel="stylesheet"
@@ -46,10 +48,12 @@ require_once 'includes/login_view.inc.php';
             </ul>
             <div class="right-content">
 
-               <?php
+            <?php
               if(!isset($_SESSION["user_id"])){?>
-                <a href="signin.html" class="nav-btn">Sign In</a>
-              <?php }?>
+                <a href="signin.php" class="nav-btn">Sign In</a>
+              <?php }else {?>
+                <a href="profile.php?id=<?php echo $_SESSION["user_id"]; ?>" class="nav-btn">Profile</a>
+                <?php }?>
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
     

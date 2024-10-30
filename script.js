@@ -1,49 +1,16 @@
 
-
-const COLOR_BTNS = document.querySelectorAll('.color');
-COLOR_BTNS.forEach(color => {
-    color.addEventListener('click', () => {
-        let colorNameClass = color.className;
-        if(!color.classList.contains('active-color')){
-            let colorName = colorNameClass.slice(colorNameClass.indexOf('-') + 1, colorNameClass.length);
-            resetActiveBtns();
-            color.classList.add('active-color');
-            setNewColor(colorName)
-        }
-    });
-})
-
-// resetting all color btns
-function resetActiveBtns(){
-    COLOR_BTNS.forEach(color => {
-        color.classList.remove('active-color');
-    });
-}
-
-// set new color on the banner right 
-function setNewColor(color){
-    document.querySelector('.hero-img img').src = `images/card_${color}.png`;
-}
-
-
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
+let body = document.body; // Get the body element
 
-menu.onclick = () =>{
-    menu.classList.toggle('bx-x');
-    navlist.classList.toggle('open');
-}
-
-//slider swiper
-var swiper = new Swiper(".mySwiper", {
-    effect: "cards",
-    grabCursor: true,
-    loop: true,
-    autoplay: {
-        delay:2500,
-        disableOnInteraction: false,
-    },
-  });
-
-  //edn slide swiper
-  
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');  // Toggle the menu icon state
+    navlist.classList.toggle('open');  // Toggle the menu visibility
+    
+    // Toggle scrolling behavior based on menu state
+    if (navlist.classList.contains('open')) {
+        body.style.overflow = 'hidden';  // Disable scrolling when the menu is open
+    } else {
+        body.style.overflow = 'auto';    // Enable scrolling when the menu is closed
+    }
+};

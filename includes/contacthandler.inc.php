@@ -15,7 +15,7 @@
 
             $pdo = null;
             $stmt = null;
-            header("Location: ../testc.php");
+            header("Location: ../contact.php");
 
             die();
 
@@ -26,6 +26,6 @@
 
     }
     else{
-        header("Location: ./testc.php");
+        header("Location: ./contact.php");
         die();
     }
